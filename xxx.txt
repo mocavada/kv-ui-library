@@ -1,0 +1,2 @@
+//Run every new terminal
+source ~/.nvm/nvm.sh

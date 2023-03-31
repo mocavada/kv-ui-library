@@ -1,14 +1,27 @@
 {
   "hosting": {
     "public": "out",
-    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+    "rewrites": [{
+        "source": "**",
+        "destination": "/index.html"
+      }],
     "frameworksBackend": {
       "region": "us-east1"
-    }
+    },
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "/favicon.ico",
+        "headers": [{
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }]
+      }
+    ]
   }
 }
