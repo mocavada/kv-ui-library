@@ -1,2 +1,9 @@
 //Run every new terminal
 source ~/.nvm/nvm.sh
+
+
+  #063970 dark blue
+
+  #abdbe3 light
+
+  
